@@ -9,7 +9,7 @@ fun main() {
     println("Hello World")
     // Test functions here
     
-    val storedCard1 = PaymentInfo("Bob", 22223333, 111)
+	val storedCard1 = PaymentInfo("Bob", 22223333, 111)
     val storedCard2 = PaymentInfo("John", 11113333, 134)
 
     val invalidCard1 = PaymentInfo("", 11113333, 134)
@@ -54,7 +54,7 @@ fun validInfo(paymentInfo: PaymentInfo): Boolean {
     // TODO validate paymentInfo according to instructions
     // I am assuming that the cardOwner Name is composed of letters of alphabets only.
     
-    if (paymentInfo.cardOwner.length > 0 && paymentInfo.cardNumber.toString().length == 8 && paymentInfo.cardCVV.toString().length == 3){
+    if (paymentInfo.cardOwner.length > 0 && paymentInfo.cardNumber.toString().length == 9 && paymentInfo.cardCVV.toString().length == 3){
         return true
     }
     return false
