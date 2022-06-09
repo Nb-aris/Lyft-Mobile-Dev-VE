@@ -6,7 +6,6 @@
 fun main() { 
     
     initDB()
-    println("Hello World")
     // Test functions here
     
 	val storedCard1 = PaymentInfo("Bob", 22223333, 111)
